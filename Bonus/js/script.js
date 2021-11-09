@@ -10,7 +10,8 @@ new Vue({
     },
     methods: {
         generateMultipleMails(){
-            
+            this.mailList = []
+            this.totalEmails = 0
             for (let i = 0; i < 10; i++) {
                 
                 axios.get(this.apiUrl).then((responseServer)=>{
